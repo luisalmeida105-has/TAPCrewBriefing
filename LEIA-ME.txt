@@ -1,0 +1,38 @@
+CREWBRIEF — NOVA BASE V2 (BETA)
+
+APLICAÇÃO INSTALÁVEL (PWA), NÃO APP NATIVA DA APP STORE.
+Inclui interface móvel independente, ícone, navegação inferior, duas opções de câmara,
+OCR de fotografias, confirmação de dados, cálculo por fuso horário e guarda da sessão
+via IndexedDB, com exportação/restauro de cópia de segurança.
+
+PUBLICAÇÃO:
+Substituir TODOS os ficheiros da raiz do repositório/site por estes ficheiros.
+Em GitHub Pages a branch deve ser main, pasta / (root), com index.html na raiz.
+No Safari do iPhone: Partilhar > Adicionar ao ecrã principal > Abrir como aplicação.
+
+FUNCIONAMENTO:
+1. Fotografar Flight Report (ou escolher uma imagem).
+2. Tocar em Analisar fotografia. Confirmar último setor e STD UTC.
+3. Fotografar InfoNightStop (ou escolher imagem).
+4. Tocar em Analisar fotografia. Confirmar regras de Transporte da Tripulação.
+5. Em Dados, confirmar data UTC e fuso IANA da origem, períodos e minutos das regras.
+6. Confirmar ausência de atraso comunicado e dados; calcular horários.
+7. Em Guardar, exportar cópia de segurança ou Reiniciar dados (confirmação).
+
+ATENÇÃO:
+- OCR utiliza Tesseract.js por CDN, por isso necessita de rede para obter o motor na
+  primeira leitura e pode falhar com fotografias desfocadas, reflexos ou tabelas.
+- A conversão UTC/local usa as regras de fuso horário IANA no dispositivo.
+- O catálogo IATA embutido contém aeroportos principais (NÃO é mundial completo).
+  Se um aeroporto não constar, indicar manualmente o fuso IANA.
+- Regra especial só é aplicada quando o período horário está especificado.
+- Resultados dependem de confirmação manual dos campos e da condição sem atraso.
+- O armazenamento local pode ser limpo pelo iOS: exportar cópia de segurança.
+- Não enviar fotografias ou documentos operacionais para repositórios públicos.
+- Ainda não foi ensaiado OCR real num iPhone/iPad; protótipo BETA, não validado
+  para utilização operacional.
+
+TESTE DE LÓGICA:
+TP262, 14 NOV 2026, YYZ -> LIS, STD 03:45 UTC = 13 NOV 22:45 Toronto.
+InfoNightStop: regra geral 2h50, especial 2h15 entre 20:00 e 06:00 locais.
+Saída do hotel 20:30 / Wakeup Call 19:30 (13 NOV, Toronto).
