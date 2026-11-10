@@ -1,11 +1,9 @@
-CrewBrief V3.1 — Ajustes visuais
+CrewBrief — atualização visual
 
-1. Não mostra a versão no cabeçalho.
-2. Título principal: "O teu NightStop".
-3. Dois botões com apenas o ícone da câmara sem quadrado adicional.
+Alterações:
+- Removido o texto inferior que começava com “Apenas as fotografias...”.
+- Removida da interface Arquivo a opção “Detalhes de leitura (diagnóstico)”. Os elementos necessários ao código ficam ocultos para não provocar erros.
 
-Importante: não foram alterados os cálculos, as duas câmaras, o armazenamento IndexedDB ou a função Reiniciar dados.
+Os cálculos, as duas câmaras e o armazenamento existente mantêm-se inalterados.
 
-Para atualizar: carregar os ficheiros deste ZIP na RAIZ do mesmo repositório GitHub e confirmar a substituição dos ficheiros existentes. O GitHub Pages publica a partir de main / (root).
-
-Ao abrir no Safari, atualizar a página; se estiver instalada, abrir a aplicação depois de concluída a publicação. Não apagar dados do Safari nem a aplicação instalada para evitar perda da sessão local.
+Publicação: substituir os ficheiros da raiz do repositório atual pelos deste pacote, preservando o mesmo endereço da aplicação. Não desinstalar a aplicação nem apagar os dados do Safari, para manter as fotografias e horários guardados.
