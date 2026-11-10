@@ -1,25 +1,11 @@
-CrewBrief V2.1 — DUAS CÂMARAS / SEM PDF
+CrewBrief V3.1 — Ajustes visuais
 
-CORREÇÃO DESTA VERSÃO
-- Ecrã inicial com exatamente 2 entradas para fotografar:
-  1. Fotografar Flight Report (image/*, câmara traseira)
-  2. Fotografar InfoNightStop (image/*, câmara traseira)
-- A opção Importar PDF foi removida do ecrã inicial.
-- Mantém IndexedDB (crewbrief-session-v2) e cópia de segurança.
-- Mantém confirmação manual de dados e cálculo UTC/hora local.
+1. Não mostra a versão no cabeçalho.
+2. Título principal: "O teu NightStop".
+3. Dois botões com apenas o ícone da câmara sem quadrado adicional.
 
-PUBLICAÇÃO
-O ZIP tem os ficheiros DIRETAMENTE NA RAIZ, não dentro de outra pasta.
-Colocar os ficheiros no diretório principal do teu repositório GitHub Pages.
-É fundamental substituir index.html e incluir app-v21.js, style-v21.css e sw-v21.js.
-O título superior deverá mostrar «V2.1 · 2 CÂMARAS».
-Se continuar a aparecer «Importar PDF», a página publicada é antiga ou está em cache;
-abrir o site no Safari com ?v=21 no final do endereço e verificar o título.
-Não desinstalar a app para tentar atualizar: podes perder dados guardados.
+Importante: não foram alterados os cálculos, as duas câmaras, o armazenamento IndexedDB ou a função Reiniciar dados.
 
-LIMITAÇÕES
-- PWA instalável, não app nativa iOS.
-- No iOS, o selector da câmara depende do comportamento do Safari/iOS.
-- OCR automático não validado no iPhone real, requer CDN de Tesseract.js.
-- Dados locais podem desaparecer se o utilizador ou iOS eliminar armazenamento do site.
-- Sempre confirmar dados e regra documental antes de usar horários.
+Para atualizar: carregar os ficheiros deste ZIP na RAIZ do mesmo repositório GitHub e confirmar a substituição dos ficheiros existentes. O GitHub Pages publica a partir de main / (root).
+
+Ao abrir no Safari, atualizar a página; se estiver instalada, abrir a aplicação depois de concluída a publicação. Não apagar dados do Safari nem a aplicação instalada para evitar perda da sessão local.
